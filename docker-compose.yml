@@ -16,7 +16,8 @@ services:
         links:
             - php
     php:
-        image: php:7.4.8-fpm-alpine
+        build:
+            context: .
         container_name: phpserver_phpfpm
         volumes:
             - ./www:/www
