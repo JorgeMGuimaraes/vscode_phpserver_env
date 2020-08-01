@@ -10,3 +10,6 @@ services:
         restart: always
         ports:
             - "80:80"
+        volumes:
+            - ./www:/www
+            - ./server/site.conf:/etc/nginx/conf.d/site.conf
