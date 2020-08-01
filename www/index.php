@@ -1,1 +1,5 @@
-<html><head><title>Ola</title></head><body><h2>!!Ola Docker!<h2></body></html>
+<?php
+$name= "Jorge";
+echo($name)
+
+?>
