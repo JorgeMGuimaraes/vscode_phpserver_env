@@ -1,0 +1,12 @@
+version: "3"
+# General
+# 2020-07-31
+# Web server
+## Nginx
+services:
+    web:
+        image: nginx:1.19.1-alpine
+        container_name: phpserver_nginx
+        restart: always
+        ports:
+            - "80:80"
