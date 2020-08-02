@@ -29,6 +29,10 @@ services:
         restart: always
         ports:
             - "3306:3306"
+        expose:
+            - "3306"
+        #volumes:
+        #    - ./mariadb/conf:/etc/mysql
         environment:
             MYSQL_ROOT_PASSWORD: hguyFtgfR4r9R4r76
             MYSQL_USER: jorge
