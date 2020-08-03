@@ -7,8 +7,8 @@ services:
         ports:
             - "80:80"
         volumes:
-            - ./www:/www
-            - ./site.conf:/etc/nginx/conf.d/site.conf
+            - ../www:/www
+            - ../site.conf:/etc/nginx/conf.d/site.conf
         links:
             - php
     php:
@@ -18,7 +18,7 @@ services:
         ports:
             - "8080:8080"
         volumes:
-            - ./www:/www
+            - ../www:/www
         links:
             - db
     db:
