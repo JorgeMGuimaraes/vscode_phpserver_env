@@ -2,3 +2,4 @@ server/log/*
 database/*
 src/*
 !src/.vscode/*
+!src/adminer.php
