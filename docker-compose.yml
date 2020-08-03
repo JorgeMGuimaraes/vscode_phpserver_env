@@ -28,3 +28,9 @@ services:
         environment:
             - MYSQL_ROOT_PASSWORD=root
             - MYSQL_DATABASE=teste
+            - MYSQL_USER=jorge
+            - MYSQL_PASSWORD=hguyFt6S95dgfR4ryb
+            # Not used
+            # MYSQL_DATABASE: specify the name of the database
+            # MYSQL_CHARSET: default charset (utf8) for Mariadb
+            # MYSQL_COLLATION: default collation (utf8_general_ci)
