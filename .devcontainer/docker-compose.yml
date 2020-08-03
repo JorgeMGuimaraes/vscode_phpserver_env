@@ -8,6 +8,7 @@ services:
             - "80:80"
         volumes:
             - ../src:/www
+            - ../server:/var/log/nginx
             - ../site.conf:/etc/nginx/conf.d/site.conf
         links:
             - php
